@@ -15,6 +15,7 @@
 			Console.Write("In what city were you born? ");
 			string city = Console.ReadLine();
 
+			/*
 			char[] firstNameArray = firstName.ToCharArray();
 			Array.Reverse(firstNameArray);
 
@@ -40,8 +41,29 @@
 			{
 				result += c;
 			}
+			*/
 
-			Console.WriteLine("Results: " + result);
+			Console.WriteLine("Results:");
+			DisplayResult(ReverseString(firstName), ReverseString(lastName), ReverseString(city));
+			DisplayResult(ReverseString(firstName) + " " + ReverseString(lastName) + " " + ReverseString(city));
+		}
+
+		private static string ReverseString(string message)
+		{
+			char[] messageArray = message.ToCharArray();
+			Array.Reverse(messageArray);
+
+			return (String.Concat(messageArray));
+		}
+
+		private static void DisplayResult(string reversedFirstName, string reversedLastName, string reversedCity)
+		{
+			Console.WriteLine($"{reversedFirstName} {reversedLastName} {reversedCity}");
+		}
+
+		private static void DisplayResult(string message)
+		{
+			Console.WriteLine(message);
 		}
 	}
 }
