@@ -14,14 +14,12 @@
 
 			decimal value = DetermineMarketValue(myCar);
 			//Console.WriteLine("{0:C}", value);
-
 			Console.WriteLine("{0:C}", myCar.DetermineMarketValue());
 		}
 
 		private static decimal DetermineMarketValue(Car car)
 		{
 			decimal carValue = 100.0M;
-
 			return carValue;
 		}
 
@@ -37,9 +35,7 @@
 				decimal carValue;
 
 				if (Year > 1990)
-				{
 					carValue = 10000;
-				}
 				else
 					carValue = 2000;
 
