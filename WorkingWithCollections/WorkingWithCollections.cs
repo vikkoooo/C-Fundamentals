@@ -1,6 +1,6 @@
 ﻿namespace WorkingWithCollections
 {
-	class Program
+	class WorkingWithCollections
 	{
 		static void Main(string[] args)
 		{
